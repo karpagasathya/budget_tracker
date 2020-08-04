@@ -45,8 +45,19 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <!-- link to indexedDB js first, then index.js -->
+  <!-- link to indexedDB js -->
   <script src="db.js"></script>
   <script src="index.js"></script>
+
+  <!-- register service worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js").then(reg => {
+          console.log("Your service worker file was found!", reg);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
