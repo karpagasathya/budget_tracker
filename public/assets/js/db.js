@@ -1,6 +1,6 @@
 let db;
 
-// create a new database rquest and connection
+// create a new database request and connection
 const request = indexedDB.open("budget", 1);
 
 // on upgrade needed create a new object store called pending
@@ -23,7 +23,7 @@ request.onerror = function (event) {
   console.log("There was an error: ", event.target.errorCode);
 };
 
-// used in index.js if the POST request to our API fails (if there is no internet connection) -- saves recored to indexedDB database
+// used in index.js if the POST request to our API fails (if there is no internet connection) -- saves record to indexedDB database
 function saveRecord(record) {
   // open a transaction and access pending object store
   const transaction = db.transaction(["pending"], "readwrite");
