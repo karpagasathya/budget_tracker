@@ -58,6 +58,7 @@ node server.js
 
 [MIT](public/assets/license.txt) license
 
-## Screenshots
+## Screenshots and gif
 
 ![](public/assets/images/image1.png)
+![](public/assets/images/budget.gif)
