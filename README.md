@@ -44,7 +44,7 @@ npm install
 node server.js 
 ```
 
-* Another way to run this App is to, Navigate to [Heroku site]() and get started to use this Application.
+* Another way to run this App is to, Navigate to [Heroku site](https://infinite-harbor-36022.herokuapp.com/) and get started to use this Application.
 
 * Enter a transaction name and amount, choose whether the transaction is a deposit (add funds) or an expense (subtract funds).
 * View a table containing past transactions.
@@ -60,3 +60,4 @@ node server.js
 
 ## Screenshots
 
+![](public/assets/images/image1.png)
